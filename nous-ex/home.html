@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+
+    <link rel="stylesheet" href="styles/parallax.css">
+</head>
+<body>
+    <section>
+        <div class="wave" id="wave1" style="--i:1"></div> 
+        <div class="wave" id="wave2" style="--i:2"></div> 
+        <div class="wave" id="wave3" style="--i:3"></div> 
+        <div class="wave" id="wave4" style="--i:4"></div> 
+    <</section>
+    <div class="sec"> 
+        <h2> This is a parallax effect </h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, inventore dolores minus nostrum possimus reiciendis? Assumenda aspernatur error ex necessitatibus hic eius odit, repellendus maiores corrupti tenetur consequuntur natus vel. </p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, inventore dolores minus nostrum possimus reiciendis? Assumenda aspernatur error ex necessitatibus hic eius odit, repellendus maiores corrupti tenetur consequuntur natus vel. </p>
+    </div>
+
+    <div class="parallax-bg">  </div>
+
+    <script>
+        let wave1 = document.getElementById('wave1');
+        let wave2 = document.getElementById('wave2');
+        let wave3 = document.getElementById('wave3');
+        let wave4 = document.getElementById('wave4');
+
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            wave1.style.backgroundPositionX = 400 + value + 'px';
+            wave1.style.backgroundPositionX = 300 + value + 'px';
+            wave1.style.backgroundPositionX = 200 + value + 'px';
+            wave1.style.backgroundPositionX = 100 + value + 'px';
+        })
+    </script>
+
+
+</body>
+
+</html>

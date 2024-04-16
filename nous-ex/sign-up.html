@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    
+    <link rel="stylesheet" href="styles/sign-up.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container"> 
+            <a href="index.html"> <img src="styles/res/logo.png" id="logo" width="100px"></a>
+        </div>
+        <div class="divider"></div>
+        <a href="">Home</a>
+        <div class="divider"></div>
+        <a href="">Products</a>
+        <div class="divider"></div>
+        <a href="">PC Builder</a>
+        <div class="divider"></div>
+        <div class="spacer"></div>
+        <div class="nav-links">
+            <a href="sign-up.html" class="signup">Sign up</a>
+            <div class="divider"></div>
+            <a href="login.html" class="login">Login</a>
+        </div>
+    </nav>
+  
+
+    <video id="video-bg" autoplay loop muted>
+        <source src="styles/res/video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="main-container">
+        <div class="component-container">
+
+            <h1 class="lbl-title"> NOUS X SIGN-UP </h1>
+
+            <div class="email-container"> 
+                <input class="textbox-em" type="email" placeholder="Email" required> <br>
+            </div>
+
+            <div class="password-container">
+                <input class="textbox-pw" id="password" type="password" placeholder="Password" required>
+                <img src="/styles/res/hide.png" id="eyeicon" width="25px">
+            </div>
+            <button class="btn-signup"> SIGNIN </button>
+            <p class="lbl-login"> <a href="login.html"> Already have an account? </a> </p>
+        </div>
+    </div>
+
+    <script> 
+        let eyeicon = document.getElementById("eyeicon");
+        let password = document.getElementById("password");
+   
+        eyeicon.onclick = function() 
+        {
+            if (password.type == "password") 
+            {
+            password.type = "text";
+            eyeicon.src = "/styles/res/view.png";
+            } else {
+           password.type = "password";
+           eyeicon.src = "/styles/res/hide.png";
+       }
+   }
+       </script>
+
+</body>
+</html>

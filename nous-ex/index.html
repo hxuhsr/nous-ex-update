@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/parallax.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container"> 
+            <a href="index.html" class="logo-link"> <img src="styles/res/logo.png" id="logo" width="100px"></a>
+        </div>
+        <div class="divider"></div>
+        <a href="">Home</a>
+        <div class="divider"></div>
+        <a href="">Products</a>
+        <div class="divider"></div>
+        <a href="pc-builder.html">PC Builder</a>
+        <div class="divider"></div>
+        <div class="spacer"></div>
+        <div class="nav-links">
+            <a href="sign-up.html" class="signup">Sign up</a>
+            <div class="divider"></div>
+            <a href="login.html" class="login">Login</a>
+        </div>
+        <div class="divider"></div>
+        <div class="cart-container"> 
+            <a href="cart.html" class="cart-link"> <img src="styles/res/cart1.png" id="cart" width="30px"></a>
+        </div>
+    </nav>
+  
+
+      <!-- Transparent-BG -->
+   <div class="transparent-bg"> </div> 
+    
+
+     <!-- Parallax-waves -->
+    <section>
+        <div class="wave" id="wave1" style="--i:1"></div> 
+        <div class="wave" id="wave2" style="--i:2"></div> 
+        <div class="wave" id="wave3" style="--i:3"></div> 
+        <div class="wave" id="wave4" style="--i:4"></div> 
+    <</section>
+
+    <div class="parallax-bg">  </div>
+
+    <script> 
+        let wave1 = document.getElementById('wave1');
+        let wave2 = document.getElementById('wave2');
+        let wave3 = document.getElementById('wave3');
+        let wave4 = document.getElementById('wave4');
+
+    window.addEventListener('scroll', function() {
+    let value = window.scrollY;
+    wave1.style.backgroundPositionX = 400 + value + 'px';
+    wave2.style.backgroundPositionX = 300 + value + 'px';
+    wave3.style.backgroundPositionX = 200 + value + 'px';
+    wave4.style.backgroundPositionX = 100 + value + 'px';
+});
+
+    </script>
+
+</body>
+</html>
